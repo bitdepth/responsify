@@ -1,0 +1,181 @@
+/* html5doctor.com/html-5-reset-stylesheet/ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; } 
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+article,aside,figure,footer,header,hgroup,nav,section { display:block; }
+
+
+/*-  BASE STYLES (various and sundry personal reset styles)
+----------------------------------------------------------------------*/
+body {
+	background: #FFF;
+	color: #444;
+	font: normal 100% "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
+}
+table {
+	font-size:inherit;
+	font: 100%;
+}
+select,
+input,
+textarea {
+	font: 99% sans-serif;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+abbr[title],
+dfn[title] {
+	border-bottom:1px dotted #000;
+	cursor: help;
+}
+input.text,
+input[type=text]
+textarea {
+	border: 1px solid #7C7C7C;
+	border-color: #7C7C7C #7C7C7C #C3C3C3 #C3C3C3;
+}
+.skip {
+	left: -1000em;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+
+/*-  MAIN ARTICLE DESIGN (shared components)
+----------------------------------------------------------------------*/
+body {
+	background: url("bg.jpg");
+	background-attachment: fixed;
+	color: #333;
+	/*text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);*/
+}
+
+[role=main]{margin-top:4em;}
+
+a {
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	-moz-transition: color .2s linear;
+	-ms-transition: color .2s linear;
+	-o-transition: color .2s linear;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+}
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+p {
+	text-indent: 2em;
+	margin-bottom:1em;
+	padding:0 3em;
+}
+p:first-child,
+blockquote + p,
+figure p,
+ul + p,
+ol + p {
+	text-indent: 0;
+}
+header {
+	margin-bottom: 1.25em;
+}
+header img {
+	display: block;
+	margin: 0 auto 1.25em;
+}
+.main-title {
+	font-weight: normal;
+	font-family: abril-display, Palatino, Georgia, Times, serif;
+	margin-bottom: 0.4em;
+	text-align: center;
+}
+.main-title cite {
+	white-space: nowrap;
+	display: block;
+}
+.byline {
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.article-body {
+	margin-bottom: 1em;
+}
+.caps {
+	font-weight: normal;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+figure,
+footer {
+	font-style: italic;
+}
+figure {
+	border-bottom: 2px solid #999;
+	float: right;
+	margin-left: 5%;
+	padding-bottom: 0.75em;
+	margin-top: 0.4em;
+	width: 35%;
+}
+footer {
+	background: url("../img/monkeys.png") no-repeat 50% 0;
+	margin: 0 auto;
+	max-width: 85%;
+	text-align: center;
+	padding-top: 110px;
+}
+
+/* Disable iOS/WinMobile font size changes */
+@media screen and (max-device-width: 480px) {
+	html {
+		-ms-text-size-adjust: none;
+		-webkit-text-size-adjust: none;
+	}
+}
+
+/*
+	Font sizin'
+*/
+body {
+	font: normal 16px/1.5 adobe-text-pro, Cambria, Georgia, "Times New Roman", Times, serif;
+}
+.main-title {
+	font: normal 30px/36px abril-display, Palatino, Georgia, Times, serif;
+}
+.main-title cite {
+	font-size: 42px;
+	line-height: 50px;
+}
+.article-body {
+	font-size: 18px;
+	line-height: 1.66666667;		/* 30 / 18 */
+}
+
+.article-img{
+	margin:0 auto;
+	display:block;
+}
+
+.caps,
+figure,
+footer {
+	font-size: 14px;
+}
+figure {
+	line-height: 1.35714286;		/* 19 / 14 */
+}
