@@ -1,7 +1,5 @@
 ;(function($){
 
-	// $('#responsify-btn').click(function(){
-		$('body').responsify();
-	// });
+	$('body').responsify();
 
 })(jQuery);
